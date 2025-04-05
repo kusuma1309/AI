@@ -1,0 +1,14 @@
+import numpy as np
+
+arr = np.array([[6, 1, 8], [7, 4, 9], [5, 3, 2]])
+
+print("Original Array: \n", arr)
+
+sorted_array_row = np.sort(arr, axis=1)
+print("\nRow Sorted Array: \n", sorted_array_row)
+
+sorted_array_col = np.sort(arr, axis=0)
+print("\nColumn Sorted Array: \n", sorted_array_col)
+
+sorted_array_all = np.sort(arr, axis=None)
+print("\nSorted Array: \n", sorted_array_all)
