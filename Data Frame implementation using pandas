@@ -1,0 +1,18 @@
+import pandas as pd
+d = {
+    'Roll No':[368,329,366],
+    'Name':['Sathish','Sahu','Krishna'],
+    'Marks':[90,99,89]
+}
+
+df = pd.DataFrame(d)
+print(df)
+
+print("\nFirst 2 Rows (head):")
+print(df.head(2))
+
+print("\nFirst 2 Columns (tail):")
+print(df.tail(2))
+
+print("\nDataFrame Info:")
+print(df.info())
