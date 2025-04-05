@@ -1,0 +1,30 @@
+import random
+
+def objective_fun(x):
+    return -x**2 + 4*x
+
+def hill_climb(start, step_size = 0.1, max_iteration=100):
+    current_x = start
+    current_value = objective_fun(current_x)
+
+    for i in range(max_iteration):
+        neighbors = [current_x + step_size, current_x - step_size]
+        
+        neighbor_values = [objective_fun(neighbor) for neighbor in neighbors]
+
+        best_value = max(neighbor_values)
+        best_neighbor = neighbors[neighbor_values.index(best_value)]
+
+        if best_value > current_value:
+            current_x = best_neighbor
+            current_value = best_value
+        else:
+
+            break
+
+    return current_x, current_value
+
+
+start = random.uniform(-10, 10)
+result = hill_climb(start)
+print(f"Best solution: x = {result[0]}, value = {result[1]}")
