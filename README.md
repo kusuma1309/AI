@@ -136,7 +136,7 @@ No additional installations are required.
 
 ## 👨‍💻 Author
 
-Your Name  
+Kusuma.B
 BTech – Computer Science Engineering (AI & ML)
 
 ---
